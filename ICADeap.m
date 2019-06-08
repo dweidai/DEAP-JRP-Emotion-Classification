@@ -48,7 +48,9 @@ for k = 1:(numel(filespath))
     EEG = eeg_checkset( EEG );
     EEG = eeg_checkset( EEG );
     EEG = pop_runica(EEG, 'extended',1,'interupt','on','pca',31);
-    EEG.data = EEG.icawinv * EEG.icaact
+    for i = 1:40
+        EEG.data(:,:,i) = EEG.icawinv*EEG.icaact(:,:,i)
+    end;
     EEG = eeg_checkset( EEG );
     save_name = strcat(DEAP, num, post_filename);
     EEG = pop_saveset( EEG, 'filename', save_name,'filepath',save_dir);

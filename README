@@ -4,4 +4,9 @@ Preprocessed DEAP mat files and DEAP.ced are required for ICADEAP.m
 Then run .set with SETtoMAT.m to take the EEG Channel data
  -> which will be used to generate ImageData
  -> They will be stored as .mat files
+
+Python Packages:
+ numpy, sklearn, pyunicorn, glob, os, matplotlib, PIL, pandas, random, pytorch, torch, scipy, nolitsa
  
+Matlab Packages:
+ EEGLAB

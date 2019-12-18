@@ -1,4 +1,5 @@
-Update: This is computed using recurrence plot and currently abandoned due to no significant improvement.
+This is computed using recurrence plot and currently abandoned due to no significant improvement.
+However, maybe with LSTM and GAN could improve the accuracy
 
 Preprocessed DEAP mat files and DEAP.ced are required for ICADEAP.m
  -> which will create ICA components and back-project them to the channel
